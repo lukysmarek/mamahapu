@@ -1,0 +1,13 @@
+name: hapumama
+title: hapumama
+username:
+account: geohealthlab
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6938173
+bundleId: 6295803
+url: https://geohealthlab.shinyapps.io/hapumama/
+when: 1663032193.45123
+lastSyncTime: 1663032193.45131
+asMultiple: FALSE
+asStatic: FALSE
