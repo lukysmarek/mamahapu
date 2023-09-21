@@ -15,7 +15,7 @@ ui <- bootstrapPage(title = "Maternal Immunisation Coverage",
                                     # h2("PM in Chch"),
                                     # radio buttons
                                     div(style = "margin-bottom: 0px; margin-top: 0px; text-align: center;", HTML("<a href='https://www.canterbury.ac.nz/science/research/geohealth/'><img style='width: 227px;' src='GHL_plum.png' /></a>")),
-                                    radioButtons("category","I want to show immunisation rates:", c("Overall" = "Total", "By ethnicity" = "eth"), selected = "Total", inline = T),
+                                    radioButtons("category","I want to show maternal immunisation rates:", c("Overall" = "Total", "By ethnicity" = "eth"), selected = "Total", inline = T),
                                     # conditional checklist panel
                                     # Filtering by topic based on the conditions from selectInput - important is to name all inputs differently
                                     conditionalPanel(
@@ -25,6 +25,7 @@ ui <- bootstrapPage(title = "Maternal Immunisation Coverage",
                                     radioButtons("imms", "Choose immunisation type:", choices = c("Influenza", "Pertussis"), inline = T),
                                     # slider time using text to define the intervals precisely
                                     sliderTextInput("datetime", "Select year", choices = 2013:2021, animate = animationOptions(interval=1000, loop=T), grid = T), 
+                                    div(HTML("Do you want to find out more? You can read our <a href='https://www.sciencedirect.com/science/article/pii/S0277953623005853'><b>research paper</b></a> (or <a href='Maternal_vaccination.pdf'>here</a>)."), style="font-size:9pt")
                                   )
                                   ),
                     absolutePanel(top = 10, right = 10, left = "auto", bottom = "auto", draggable = TRUE, width = 450, height = "auto", style = "opacity: 0.85;z-index: 1000",
